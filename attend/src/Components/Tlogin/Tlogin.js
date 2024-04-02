@@ -19,7 +19,7 @@ const Tlogin = (props) => {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        credentials: "include",
+       
       });
       const data = await res.json();
       console.log(data);

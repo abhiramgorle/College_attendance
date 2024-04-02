@@ -28,7 +28,7 @@ const navigate = useNavigate();
 
       console.log(data);
       axios
-      .get(`http://localhost:3002/api/getstuddata/${data.email}`)
+      .get(`http://localhost:8080/api/getstuddata/${data.email}`)
       .then((res) => {
         setstudentData(res.data[0]);
        console.log(res.data[0]);

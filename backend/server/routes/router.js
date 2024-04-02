@@ -35,7 +35,7 @@ route.put("/api/teacherdata/:id", controller.updateteacher);
 
 route.post("/api/alldates", controller.AllDates);
 
-route.get("/aftertlogin", authenticate, (req, res) => {
+route.get("/aftertlogin", (req, res) => {
   res.send(req.rootUser);
 });
 route.get("/afterslogin", authenticatestu, (req, res) => {
